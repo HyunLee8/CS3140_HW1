@@ -58,4 +58,19 @@ public class RunSonnetGame {
             System.out.println("you lost");
         }
     }
+
+
+    //===============TEST METHODS===============
+
+    public int getWins() {
+        return wins;
+    }
+
+    public int getLosses() {
+        return losses;
+    }
+
+    public String getAnswer() {
+        return game.getSonnetSubstring()[game.getCurrentIndex()-1];
+    }
 }

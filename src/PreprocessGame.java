@@ -11,6 +11,10 @@ public class PreprocessGame {
         this.indexableSonnet = convertStringToArray(sonnet);
     }
 
+    public int getCurrentIndex() {
+        return currentIndex;
+    }
+
     public String[] getSonnetSubstring() {
         return this.sonnetSubstring;
     }
