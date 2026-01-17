@@ -26,7 +26,7 @@ public class RunSonnetGame {
         runGame();
     }
 
-    public void runGame() {
+    private void runGame() {
         Scanner scanner = new Scanner(System.in);
         while(wins < 3 && losses < 3) {
             game.randomize();

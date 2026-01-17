@@ -1,3 +1,5 @@
+
+
 import java.util.Random;
 
 public class PreprocessGame {
@@ -7,14 +9,6 @@ public class PreprocessGame {
 
     public PreprocessGame(String sonnet) {
         this.indexableSonnet = convertStringToArray(sonnet);
-    }
-
-    public int getCurrentIndex() {
-        return this.currentIndex;
-    }
-
-    public String[] getIndexableSonnet() {
-        return this.indexableSonnet;
     }
 
     public String[] getSonnetSubstring() {
