@@ -17,21 +17,24 @@ public class TestMain {
     int losses = 0;
 
     public static void main(String[]args) {
-        System.out.println(runTest());
+        runTest();
+
     }
 
-    public static boolean runTest() {
+    public static void runTest() {
         PreprocessGame game = new PreprocessGame(sonnet);
         game.randomize();
 
         String[] sonnetSubstring = game.getSonnetSubstring();
         String answer = sonnetSubstring[sonnetSubstring.length-1];
 
-        if(answer.equals(sonnetSubstring[sonnetSubstring.length-1])) {
-            System.out.println(answer + " == " + sonnetSubstring[sonnetSubstring.length-1]);
-            return true;
-        } else {
-            return false;
-        }
+        System.out.println("Testing for true");
+        System.out.println(answer + " == " + sonnetSubstring[sonnetSubstring.length-1]);
+
+        System.out.println();
+
+        answer = sonnetSubstring[sonnetSubstring.length-2];
+        System.out.println("Testing for false");
+        System.out.println(answer + " == " + sonnetSubstring[sonnetSubstring.length-1]);
     }
 }
