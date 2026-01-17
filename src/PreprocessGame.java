@@ -1,4 +1,9 @@
+/*
+GAME OPTIMIZER
+ - sets up game
+ - randomizes setup after iterations
 
+ */
 
 import java.util.Random;
 
@@ -11,18 +16,12 @@ public class PreprocessGame {
         this.indexableSonnet = convertStringToArray(sonnet);
     }
 
-    public int getCurrentIndex() {
-        return currentIndex;
-    }
-
-    public String[] getSonnetSubstring() {
-        return this.sonnetSubstring;
-    }
-
+    //Make String indexable
     private String[] convertStringToArray(String sonnet) {
         return sonnet.split(" ");
     }
 
+    //Never the same substring
     private void getRandomIndex() {
         int randomIndex;
         while (true) {
@@ -43,8 +42,14 @@ public class PreprocessGame {
         this.sonnetSubstring = subString;
     }
 
+    //Done after every iteration
     public void randomize() {
         getRandomIndex();
         makeSonnetSubstring();
+    }
+
+    //Used in testing and RunSonnetGame
+    public String[] getSonnetSubstring() {
+        return this.sonnetSubstring;
     }
 }

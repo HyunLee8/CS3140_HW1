@@ -21,6 +21,7 @@ public class RunSonnetGame {
     private int runs = 1;
     private final PreprocessGame game;
 
+    //Immediately starts the game when instantiated
     public RunSonnetGame() {
         this.game = new PreprocessGame(this.sonnet);
         runGame();
@@ -57,20 +58,5 @@ public class RunSonnetGame {
         } else {
             System.out.println("you lost");
         }
-    }
-
-
-    //===============TEST METHODS===============
-
-    public int getWins() {
-        return wins;
-    }
-
-    public int getLosses() {
-        return losses;
-    }
-
-    public String getAnswer() {
-        return game.getSonnetSubstring()[game.getCurrentIndex()-1];
     }
 }

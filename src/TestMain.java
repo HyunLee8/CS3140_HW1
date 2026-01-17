@@ -1,3 +1,5 @@
+//Testing Indexing
+
 public class TestMain {
     static String sonnet = "Two households, both alike in dignity,\n" +
             "In fair Verona, where we lay our scene,\n" +
@@ -13,12 +15,9 @@ public class TestMain {
             "Is now the two hours’ traffic of our stage;\n" +
             "The which if you with patient ears attend,\n" +
             "What here shall miss, our toil shall strive to mend.\n";
-    int wins = 0;
-    int losses = 0;
 
     public static void main(String[]args) {
         runTest();
-
     }
 
     public static void runTest() {
