@@ -6,6 +6,7 @@
 //*** ENTRY POINT ***
 public class Main {
     public static void main(String[] args) {
-        RunSonnetGame RunGame = new RunSonnetGame();
+        RunSonnetGame game = new RunSonnetGame();
+        game.runGame();
     }
 }
